@@ -5,16 +5,16 @@ interface RepositoriesState {
 }
 
 interface SearchRepositoriesAction {
-    type: "search_repositories"
+    type: actionType.SEARCH_REPOSITORIES
 }
 
 interface SearchRepositoriesSuccessAction{
-    type: "search_repositories_success";
+    type: actionType.SEARCH_REPOSITORIES_SUCCESS;
     payload: string[];
 }
 
 interface SearchRepositoriesErrorAction{
-    type: "search_repositories_error";
+    type: actionType.SEARCH_REPOSITORIES_ERROR;
     payload: string;
 }
 
